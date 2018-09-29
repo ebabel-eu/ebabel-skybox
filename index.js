@@ -21,11 +21,17 @@ const userData = () => {
 /**
  * `Skybox`
  * Setup a skybox mesh and add it to the scene.
- * @param {object} THREE - Core library of THREE.js
- * @param {object} scene - Scene object where the light will be added.
+ * @param {object} input - Parameters and dependencies.
+ * @param {object} input.THREE - Core library of THREE.js
+ * @param {object} input.scene - Scene object where the skybox will be added.
  * @returns {object} Skybox mesh.
  */
-const skybox = (THREE, scene) => {
+const skybox = (input) => {
+  const {
+    THREE,
+    scene
+  } = input;
+
   const _userData = userData();
 
   const geometry = new THREE.BoxBufferGeometry(
