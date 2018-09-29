@@ -1,13 +1,13 @@
 'use strict';
 
 // Setup skybox default userData.
-const userData = () => {
-  const width = 10000;  // x.
-  const height = width; // y.
-  const depth = width;  // z.
+const userData = (size, position) => {
+  const width = size;  // x.
+  const height = size; // y.
+  const depth = size;  // z.
 
   return {
-    position: [0, 0, 0],
+    position,
     size: [width, height, depth],
     minX: -(width / 2),
     maxX: width / 2,
@@ -24,24 +24,27 @@ const userData = () => {
  * @param {object} input - Parameters and dependencies.
  * @param {object} input.THREE - Core library of THREE.js
  * @param {object} input.scene - Scene object where the skybox will be added.
+ * @param {array} input.directions - Array of image paths for all skybox sides, by directions.
+ * @param {number?} input.size - Size of the skybox. Defaults to 10000.
+ * @param {array?} input.position - Position of the skybox as 3D coordinates. Defaults to [0, 0, 0].
  * @returns {object} Skybox mesh.
  */
 const skybox = (input) => {
   const {
     THREE,
-    scene
+    scene,
+    directions,
+    size = 10000,
+    position = [0, 0, 0]
   } = input;
 
-  const _userData = userData();
+  const _userData = userData(size, position);
 
   const geometry = new THREE.BoxBufferGeometry(
     _userData.size[0],
     _userData.size[1],
     _userData.size[2]
   );
-
-  const directions = ['ft', 'bk', 'up', 'dn', 'rt', 'lf']
-    .map(filename => `../assets/whirlpool/large-files/whirlpool_${filename}.jpg`);;
 
   const material = directions.map(direction => new THREE.MeshBasicMaterial({
     map: new THREE.TextureLoader().load(direction),

@@ -1,6 +1,6 @@
 {
   "name": "ebabel-skybox",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Setup a skybox mesh and add it to the scene.",
   "main": "index.js",
   "scripts": {
