@@ -1,4 +1,6 @@
 # ebabel-skybox
+[![Build Status](https://travis-ci.org/ebabel-eu/ebabel-skybox.svg?branch=master)](https://travis-ci.org/ebabel-eu/ebabel-skybox)
+
 Setup a skybox mesh and add it to the scene.
 
 ## Instructions for Module Usage in your project/game
