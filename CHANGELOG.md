@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.2
+- Use mocks from ebabel-mocks instead of custom code in this module unit tests.
+
 ## 2.1.1
 - Add Github boilerplate documents.
 - Add Travis CLI and build badge.

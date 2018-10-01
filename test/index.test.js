@@ -1,5 +1,6 @@
 'use strict';
 
+const { mockTHREE } = require('ebabel-mocks');
 const skybox = require('../index');
 
 let THREE;
@@ -7,29 +8,8 @@ let scene;
 let directions;
 
 beforeEach(() => {
-  // Mocking.
-  THREE = {
-    BoxBufferGeometry: class BoxBufferGeometry {
-      constructor() {}
-    },
-    TextureLoader: class TextureLoader {
-      constructor() {}
-      load() {}
-    },
-    MeshBasicMaterial: class MeshBasicMaterial {
-      constructor() {}
-    },
-    Mesh: class Mesh {
-      constructor() {
-        this.position = {
-          set: () => {}
-        };
-      }
-    }
-  };
-
-  scene = { add: () => {} };
-
+  THREE = mockTHREE;
+  scene = new THREE.Scene();
   directions = ['front.jpg', 'back.jpg', 'up.jpg', 'down.jpg', 'right.jpg', 'left.jpg'];
 });
 
