@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.1.3](https://github.com/ebabel-games/ebabel-skybox/releases/tag/v2.1.3)
+- Switch ownership from ebabel-eu to ebabel-games.
+
 ## [2.1.2](https://github.com/ebabel-games/ebabel-skybox/releases/tag/v2.1.2)
 - Use mocks from ebabel-mocks instead of custom code in this module unit tests.
 
