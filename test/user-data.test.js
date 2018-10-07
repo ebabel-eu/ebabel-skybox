@@ -1,6 +1,6 @@
 'use strict';
 
-const userData = require('../user-data');
+const userData = require('../src/user-data');
 
 test('userData returns expected minX, minY, minZ, maxX, maxY, and maxZ', () => {
   const result = userData(50, [-10, 15, 2.78]);

@@ -23,7 +23,7 @@ The images to display inside the skybox are for each direction:
 ```
 const skybox = require('ebabel-skybox');
 
-// Example graphic paths. Graphics not included in this repository.
+// Example graphic paths. Graphics not included in this module.
 const directions = [
   '../assets/whirlpool/large-files/whirlpool_ft.jpg',
   '../assets/whirlpool/large-files/whirlpool_bk.jpg',

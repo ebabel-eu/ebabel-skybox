@@ -1,6 +1,6 @@
 {
   "name": "ebabel-skybox",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Setup a skybox mesh and add it to the scene.",
   "main": "index.js",
   "engines": {
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "npm run eslint && jest --coverage",
-    "jsdoc": "node ./node_modules/.bin/jsdoc -d docs ./index.js",
-    "eslint": "node ./node_modules/.bin/eslint index.js user-data.js test/*.js"
+    "jsdoc": "node ./node_modules/.bin/jsdoc -d ./docs ./src/*.js",
+    "eslint": "node ./node_modules/.bin/eslint index.js ./src/*.js test/*.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "ajv": "^6.5.4",
     "babel-eslint": "^10.0.1",
-    "ebabel-mocks": "^1.0.5",
+    "ebabel-mocks": "^2.0.0",
     "eslint": "^5.6.1",
     "jest": "^23.6.0",
     "jsdoc": "^3.5.5"

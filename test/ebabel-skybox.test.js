@@ -1,7 +1,8 @@
 'use strict';
 
 const { mockTHREE } = require('ebabel-mocks');
-const skybox = require('../index');
+
+const skybox = require('../src/ebabel-skybox');
 
 let THREE;
 let scene;

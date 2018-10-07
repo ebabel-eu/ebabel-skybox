@@ -1,6 +1,11 @@
 'use strict';
 
-// Setup skybox default userData.
+/**
+ * `userData`
+ * Setup skybox default userData.
+ * @param {Number} size - Length of each side of the skybox cube. 
+ * @param {Array} position - Coordinates where the skybox is to be positioned: Array of 3 numbers.
+ */
 const userData = (size, position) => {
   const width = size;  // x.
   const height = size; // y.

@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.1.4](https://github.com/ebabel-games/ebabel-skybox/releases/tag/v2.1.4)
+- Refactor the folder and files structure to match other modules and automatically update documentation.
+
 ## [2.1.3](https://github.com/ebabel-games/ebabel-skybox/releases/tag/v2.1.3)
 - Switch ownership from ebabel-eu to ebabel-games.
 
